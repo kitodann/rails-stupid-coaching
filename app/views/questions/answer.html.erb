@@ -1,11 +1,15 @@
 <h1>Stupid Coaching</h1>
 
+<div class="you">
+  <p><%= @ask %></p>
+  <p>- You</p>
+</div>
 
-<p><%= @ask %></p>
-<p>- You</p>
+<div class="coach">
+  <p><%= @answer %></p>
+  <p>- Your coach</p>
+</div>
 
-
-<p><%= @answer %></p>
-<p>- Your coach</p>
-
-<%= link_to "Back to ask", ask_path %>
+<div>
+<button class="button"><%= link_to "Back", ask_path, :class=>"back" %></button>
+</div>
